@@ -152,7 +152,7 @@ void menuRegister() {
                 password = inputPassword("Password (min. 4 karakter)   : ");
 
             try {
-                validasiPassword(password);
+                validasiPassword(password);  
             } catch (const exception& e) {
                 cetakPesan("err", e.what());
                 cout << YELLOW << "  [ 1 ] Coba lagi   [ 2 ] Batalkan\n" << RESET;
